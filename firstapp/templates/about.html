@@ -1,0 +1,30 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+</head>
+<body>
+<h2>This is About us page</h2>
+
+<a href="{% url 'home' %}">Home Page</a>
+<br>
+<a href="{% url 'contact' %}">Our Contacts</a>
+<br>
+<a href="{% url 'services' %}">Our Services</a>
+<br>
+<a href="{% url 'blogs' %}">Our Blogs</a>
+<br>
+<a href="{% url 'customers' %}">Customer Reviews</a>
+<br>
+
+<img src="{% static 'images/leaves.jpeg' %}" alt="">
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

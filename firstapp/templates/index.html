@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/matcha.jpeg' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+
+<a href="{% url 'about' %}">About Us</a>
+<br>
+<a href="{% url 'contact' %}">Our Contacts</a>
+<br>
+<a href="{% url 'services' %}">Our Services</a>
+<br>
+<a href="{% url 'blogs' %}">Our Blogs</a>
+<br>
+<a href="{% url 'customers' %}">Customer Reviews</a>
+<br>
+<h2>Welcome to Home page</h2>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur, consequuntur dignissimos error exercitationem incidunt pariatur soluta ullam. Aliquid doloribus illum ipsam minus nam nemo numquam officiis pariatur, praesentium vitae?</span></p>
+
+<img src="{% static 'images/boat.jpeg' %}" alt="">
+<img src="{% static 'images/giraffes.jpeg' %}" alt="">
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
